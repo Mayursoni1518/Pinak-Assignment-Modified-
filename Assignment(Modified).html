@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Section</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Full Page Section with Diagonal Background -->
+    <div id="assignment" class="diagonal-bg flex items-center justify-center">
+        <div class="container mx-auto px-4 py-8 fade-in">
+            <!-- Heading Section -->
+            <div>
+                <!-- Heading Section in Top Left Corner with Tailwind CSS -->
+                <div class=" flex top-0 left-0 z-10 fade-in">
+                    <h2 class="text-4xl font-bold text-white font-sans  mb-8 shadow-lg shadow-black/100"
+                        style="font-family: 'Inter', sans-serif;">
+                        Our Services</h2>
+                </div>
+            </div>
+            <!-- Services Grid Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg pointer pointer transform transition-all duration-500 hover:scale-105" style="cursor: pointer;">
+                    <div class="icon text-center mb-4" style="margin-top: -3.0rem;">
+                        <div
+                            class="bg-indigo-100 p-4 rounded-full border border-black inline-block shadow-lg shadow-black/100">
+                            <i
+                                class="fas fa-wrench text-4xl text-red-500 icon hover:rotate-full transition duration-1000 ease-in-out"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800">Emergency Plumbing Services</h3>
+                    <p class="text-center text-gray-600 mt-4">
+                        Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.
+                    </p>
+                    <div class="text-center mt-6">
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800">Explore this Service
+                            &rarr;</a>
+                    </div>
+                </div>
+
+
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg  transform transition-all  duration-500 hover:scale-105" style="cursor: pointer;" 
+                    >
+                    <div class="icon text-center mb-4" style="margin-top: -3.0rem;">
+                        
+                        <div class="bg-indigo-100 p-4 border border-black rounded-full inline-block">
+                            <i class="fas fa-wrench text-4xl text-blue-500"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800">Plumbing and Drains</h3>
+                    <p class="text-center text-gray-600 mt-4">
+                        As the largest plumbing and drain service company, we make thousands of repairs every day.
+                    </p>
+                    <div class="text-center mt-6">
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800">Explore this Service
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- service card 3  -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg  transform transition-all duration-500 hover:scale-105" style="cursor: pointer;"
+                   >
+                    <div class="icon text-center mb-4" style="margin-top: -3.0rem;">
+                      
+                        <div class="bg-indigo-100 p-4 border border-black rounded-full inline-block">
+                            <i class="fas fa-tint text-4xl text-purple-500"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800">Water Damage</h3>
+                    <p class="text-center text-gray-600 mt-4">
+                        Our teams are equipped with state-of-the-art water extraction and cleanup equipment.
+                    </p>
+                    <div class="text-center mt-6">
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800">Explore this Service
+                            &rarr;</a>
+                    </div>
+                </div>
+
+
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105" style="cursor: pointer;"  >
+                    <div class="icon text-center mb-4" style="margin-top: -3.0rem;">
+                        <!-- Adjust margin-top as needed -->
+                        <div
+                            class="bg-indigo-100 p-4 border border-black rounded-full inline-block shadow-lg shadow-black/100">
+                            <i class="fas fa-fire text-4xl text-yellow-500"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800">Water Heaters</h3>
+                    <p class="text-center text-gray-600 mt-4">
+                        Trust us for repair and replacement of gas, electric, and tankless water heaters.
+                    </p>
+                    <div class="text-center mt-6">
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800">Explore this Service
+                            &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- <script>
+    // Optional: JS animation using Anime.js for card hover effect
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.addEventListener('mouseover', () => {
+        anime({
+          targets: card,
+          scale: 1.05,
+          duration: 300
+        });
+      });
+    });
+  </script> -->
+
+    <!-- <script>
+    // JS animation using Anime.js for card hover effect
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        // Reset rotation before starting the animation
+        card.style.transform = 'rotate(0deg)';
+        anime({
+          targets: card,
+          rotate: '+=360deg', // Use += to rotate from the current angle
+          duration: 1000, // Adjust the duration as needed
+          easing: 'easeInOutSine', // Optional easing function
+        });
+      });
+    });
+  </script> -->
+
+    <script>
+        document.querySelectorAll('.service-card').forEach(card => {
+           
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'rotateY(360deg)'; 
+            });
+
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'rotateY(0deg)'; 
+            });
+        });
+        window.addEventListener('load', () => {
+            const container = document.querySelector('.container');
+            container.classList.add('fade-in'); 
+        });
+
+    </script>
+</body>
+
+</html>
